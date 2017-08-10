@@ -13,9 +13,9 @@ module.exports = function() { // eslint-disable-line func-names
         themes.forEach(name => {
             const theme = config.themes[name];
 
-            allThemes.push('../' + theme.src + '/web/icons/png/*');
-            allThemes.push('../' + theme.src + '/web/icons/scss/*');
-            allThemes.push('../' + theme.src + '/web/icons/css/*');
+            allThemes.push('../../../' + theme.src + '/web/icons/png/*');
+            allThemes.push('../../../' + theme.src + '/web/icons/scss/*');
+            allThemes.push('../../../' + theme.src + '/web/icons/css/*');
         });
 
         plugins.del.sync(allThemes, {
@@ -31,9 +31,9 @@ module.exports = function() { // eslint-disable-line func-names
 
             plugins.iconify(    {
                 src: '../' + theme.src + '/web/icons/svg/*.svg',
-                pngOutput: '../' + theme.src + '/web/icons/png',
-                scssOutput: '../' + theme.src + '/web/icons/scss',
-                cssOutput:  '../' + theme.src + '/web/icons/css',
+                pngOutput: '../../../' + theme.src + '/web/icons/png',
+                scssOutput: '../../../' + theme.src + '/web/icons/scss',
+                cssOutput:  '../../../' + theme.src + '/web/icons/css',
                 defaultWidth: '40px',
                 defaultHeight: '40px',
                 svgoOptions: {
