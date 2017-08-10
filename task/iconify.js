@@ -30,7 +30,7 @@ module.exports = function() { // eslint-disable-line func-names
             const theme = config.themes[name];
 
             plugins.iconify(    {
-                src: '../' + theme.src + '/web/icons/svg/*.svg',
+                src: '../../../' + theme.src + '/web/icons/svg/*.svg',
                 pngOutput: '../../../' + theme.src + '/web/icons/png',
                 scssOutput: '../../../' + theme.src + '/web/icons/scss',
                 cssOutput:  '../../../' + theme.src + '/web/icons/css',
